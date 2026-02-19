@@ -1,0 +1,135 @@
+/* 1. VARIABLES D'IDENTITÉ VISUELLE */
+:root {
+    --vert-pro: #1b4332;      /* Vert forêt (Gastronomie) */
+    --rouge-bordeaux: #660708; /* Bordeaux intense */
+    --or-doux: #d4af37;        /* Or pour le prestige */
+    --fond-leger: #f8f9fa;     /* Gris très clair */
+    --blanc-pur: #ffffff;
+}
+
+/* 2. BASE DE LA PAGE */
+body {
+    background-color: var(--fond-leger);
+    font-family: 'Poppins', sans-serif;
+    color: #2d3436;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. NAVIGATION (NAVBAR) */
+nav.navbar {
+    background: linear-gradient(90deg, var(--vert-pro) 0%, #2d6a4f 100%) !important;
+    border-bottom: 4px solid var(--rouge-bordeaux);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--or-doux) !important;
+}
+
+/* Bouton Mon Espace */
+.navbar-nav .nav-link.text-warning {
+    background-color: var(--rouge-bordeaux) !important;
+    color: var(--blanc-pur) !important;
+    border-radius: 50px;
+    padding: 8px 20px !important;
+    border: 1px solid var(--or-doux);
+    box-shadow: 0 4px 10px rgba(102, 7, 8, 0.3);
+}
+
+/* 4. ESPACEMENT ET DYNAMISME (HAUTEUR DE PAGE) */
+section, .py-5 {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+.hero, .bg-light.py-5 {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Espace entre les rangées de menus */
+.row.mt-4 {
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+}
+
+/* 5. CARTES DES MENUS */
+.card-menu {
+    border: none;
+    border-radius: 20px;
+    background: var(--blanc-pur);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-menu:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* 6. TÉMOIGNAGES CLIENTS */
+#temoignages {
+    padding: 120px 0 !important;
+    background-color: var(--blanc-pur);
+}
+
+.testimonial-card {
+    background: var(--fond-leger);
+    padding: 40px;
+    border-radius: 15px;
+    height: 100%;
+    border-left: 5px solid var(--rouge-bordeaux);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* 7. FOOTER (PLEINE LARGEUR) */
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    width: 100% !important;
+    margin-top: 80px;
+    padding: 60px 0 20px 0;
+}
+
+footer h5 {
+    color: var(--or-doux);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+footer hr {
+    background-color: #444;
+}
+
+/* 8. TITRES ET BOUTONS */
+h3, h4, h2 {
+    color: var(--vert-pro);
+    font-weight: 700;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--rouge-bordeaux) 0%, #a4161a 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 25px;
+    font-weight: 600;
+}
