@@ -37,6 +37,31 @@ $menus = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
         <?php endforeach; ?>
     </div>
+
+    <section id="temoignages" class="container my-5">
+        <h2 class="text-center mb-5" style="color: var(--vert-pro); font-weight: 700;">Ce que nos clients disent</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="fst-italic">"Un repas de Noël inoubliable, merci à l'équipe !"</p>
+                    <p class="fw-bold text-end mt-3">— Sophie D.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="fst-italic">"Livraison rapide et plats encore bien chauds. Parfait pour nos réunions."</p>
+                    <p class="fw-bold text-end mt-3">— Marc L.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="fst-italic">"Le buffet de printemps était d'une fraîcheur exceptionnelle. Tous nos invités ont adoré !"</p>
+                    <p class="fw-bold text-end mt-3">— Julie R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php require_once 'includes/footer.php'; ?>
+
